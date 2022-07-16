@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -12,8 +12,10 @@ const SecondPage = (props) => {
       <Seo title="Page two" />
       <h1>Hi from the second page</h1>
       <p>
-        <img width={props.data.contentfulAsset.width} height={props.data.contentfulAsset.height} src={props.data.contentfulAsset.url} />
+        <img src={`${props.data.contentfulImages.photo.url}?w=300&fm=gif&q=1`} />
+        sadasff
       </p>
+      {/* <GatsbyImage image={props.data.contentfulImages.photo.gatsbyImageData} alt="alt text" /> */}
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
@@ -21,12 +23,13 @@ const SecondPage = (props) => {
 
 export default SecondPage
 
-export const pageQuery = graphql`
-  query getMainPhoto {
-  contentfulAsset(title: {eq: "mainphoto"}) {
-    url
-    height
-    width
-  }
-}
-`
+// export const pageQuery = graphql`
+//   query getMainPhoto {
+//     contentfulImages(name: {eq: "Liveliness trajecten1"}) {
+//       photo {
+//         url
+//         # gatsbyImageData(width: 100)
+//       }
+//   }
+// }
+// `
