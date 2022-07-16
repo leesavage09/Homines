@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 
 const ManuelePage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Over Selina" />
     <h1>over</h1>
   </Layout>
 )
