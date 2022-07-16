@@ -1,42 +1,44 @@
 import * as React from "react"
-import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
+import { useLocation } from '@reach/router';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = (props) => {
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+  return (
+    <header className="bg-olive h-28 flex justify-center items-center">
+      <nav className="flex flex-row space-x-16 items-center text-xl">
+        <h1>
+          <MenuItem to="/">HOMINES</MenuItem>
+        </h1>
+        <MenuItem to="/manuele-fysiotherapie">MANUELE- &amp;<br />FYSIOTHERAPIE</MenuItem>
+        <MenuItem to="/liveliness-trajecten">LIVELINESS<br />TRAJECTEN</MenuItem>
+        <MenuItem to="/over">OVER MIJ</MenuItem>
+        <MenuItem to="/contact">CONTACT</MenuItem>
+      </nav>
+    </header>
+  )
+};
 
 export default Header
+
+const MenuItem = ({ to, children, className }) => {
+  const { pathname } = useLocation();
+
+  const linkStyle = pathname === to ? "text-white" : ""
+  const style = className + " " + linkStyle
+
+  return (
+    <Link className={style} to={to}>{children}</Link>
+  )
+}
