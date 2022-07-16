@@ -3381,7 +3381,7 @@ auto-bind@~4.0.0:
   resolved "https://registry.yarnpkg.com/auto-bind/-/auto-bind-4.0.0.tgz#e3589fc6c2da8f7ca43ba9f84fa52a744fc997fb"
   integrity sha512-Hdw8qdNiqdJ8LqT0iK0sVzkFbzg6fhnQqqfWhBDxcHZvU75+B+ayzTy8x+k5Ix0Y92XOhOUlx74ps+bA6BeYMQ==
 
-autoprefixer@^10.4.0:
+autoprefixer@^10.4.0, autoprefixer@^10.4.7:
   version "10.4.7"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.7.tgz#1db8d195f41a52ca5069b7593be167618edbbedf"
   integrity sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA==
@@ -6307,6 +6307,14 @@ gatsby-plugin-page-creator@^4.18.1:
     gatsby-telemetry "^3.18.1"
     globby "^11.1.0"
     lodash "^4.17.21"
+
+gatsby-plugin-postcss@^5.18.0:
+  version "5.18.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss/-/gatsby-plugin-postcss-5.18.0.tgz#b9e33066ea403f58e5d84b3f13f41707ea5722e7"
+  integrity sha512-JFarpmbj7J343pntoQV4GHyMLXmcYraJq219relJZMlYJkrROsGkmPRXbAJ7XZcCQtpk6aSS6l2DifwqmmEdGg==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    postcss-loader "^4.3.0"
 
 gatsby-plugin-react-helmet@^5.8.0:
   version "5.18.0"
@@ -9388,6 +9396,17 @@ postcss-load-config@^3.1.4:
   dependencies:
     lilconfig "^2.0.5"
     yaml "^1.10.2"
+
+postcss-loader@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-4.3.0.tgz#2c4de9657cd4f07af5ab42bd60a673004da1b8cc"
+  integrity sha512-M/dSoIiNDOo8Rk0mUqoj4kpGq91gcxCfb9PoyZVdZ76/AuhxylHDYZblNE8o+EQ9AMSASeMFEKxZf5aU6wlx1Q==
+  dependencies:
+    cosmiconfig "^7.0.0"
+    klona "^2.0.4"
+    loader-utils "^2.0.0"
+    schema-utils "^3.0.0"
+    semver "^7.3.4"
 
 postcss-loader@^5.3.0:
   version "5.3.0"
