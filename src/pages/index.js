@@ -5,13 +5,14 @@ import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 
 const IndexPage = (props) => {
-  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=308&fm=gif&q=1'
+  const JumbotronSrc = props.data.contentfulImages.image.url + '?w=308&fm=gif&q=1'
+  const JumbotronAlt = props.data.contentfulImages.altText
   const quote = `“In ons organisme is er een complexe wisselwerking tussen lichaam, geest en ziel; alles is voortdurend en niets staat ooit stil. Het gaat om het doelgericht activeren van de basisregulatie en de zelfhelende krachten van het lichaam.”`
   
   return (
     <Layout>
       <Seo title="Home" />
-      <Jumbotron imageSrc={ContactHeaderSrc} quote={quote} />
+      <Jumbotron imageSrc={JumbotronSrc} imageAlt={JumbotronAlt}  quote={quote} />
     </Layout>
   )
 }
@@ -24,6 +25,7 @@ export const pageQuery = graphql`
       image {
         url
       }
+      altText
   }
 }
 `

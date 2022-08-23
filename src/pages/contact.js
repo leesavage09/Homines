@@ -10,13 +10,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const ContactPage = (props) => {
   const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=444&fm=gif&q=1'
+  const ContactHeaderAlt = props.data.contentfulImages.altText
   const quote = `“I make it a point to practice self-care. I make an appointment with myself”`
   const MainImageSrc = props.data.contentfulPhotos.photo.url + '?w=377&fm=jpg&q=80'
+  const MainImageAlt = props.data.contentfulPhotos.altText
 
   return (
     <Layout>
       <Seo title="Contact" />
-      <Jumbotron title="Contact" imageSrc={ContactHeaderSrc} quote={quote} />
+      <Jumbotron title="Contact" imageSrc={ContactHeaderSrc} imageAlt={ContactHeaderAlt} quote={quote} />
 
       <section className="flex justify-center my-10">
         <div className="w-3/6 flex items-center">
@@ -50,7 +52,7 @@ const ContactPage = (props) => {
       <section className="bg-olive">
         <div className="flex justify-center">
           <div className="relative -top-20 w-3/6 flex justify-center ">
-            <img className="z-10  w-4/6 p-10 border-solid border-4 border-olive bg-white" src={MainImageSrc} />
+            <img className="z-10  w-4/6 p-10 border-solid border-4 border-olive bg-white" src={MainImageSrc} alt={MainImageAlt} />
           </div>
           <div className="w-3/6 flex flex-col -mb-20">
             <h2 className="py-6">Haai!</h2>
@@ -76,11 +78,7 @@ export const pageQuery = graphql`
       image {
         url
       }
-    }
-    contentfulIcons(icon: {title: {eq: "Location dot solid"}}) {
-      icon {
-        url
-      }
+      altText
     }
     contentfulPhotos(name: {eq: "Selina"}) {
     photo {

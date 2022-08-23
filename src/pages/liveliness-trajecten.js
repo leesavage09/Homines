@@ -5,13 +5,14 @@ import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 
 const LivelinessPage = (props) => {
-  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=485&fm=gif&q=1'
+  const JumbotronSrc = props.data.contentfulImages.image.url + '?w=485&fm=gif&q=1'
+  const JumbotronAlt = props.data.contentfulImages.altText
   const quote = `“The body is a self-healing organism, so it’s your job to nurture it and clearing things out of the way so the body can heal itself.”`
 
   return (
     <Layout>
       <Seo title="Liveliness Trajecten" />
-      <Jumbotron title="LIVELINESS TRAJECTEN" imageSrc={ContactHeaderSrc} quote={quote} />
+      <Jumbotron title="LIVELINESS TRAJECTEN" imageSrc={JumbotronSrc} imageAlt={JumbotronAlt} quote={quote} />
     </Layout>
   )
 }
@@ -24,6 +25,7 @@ export const pageQuery = graphql`
       image {
         url
       }
+      altText
   }
 }
 `

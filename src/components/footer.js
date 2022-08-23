@@ -8,6 +8,7 @@ const Footer = () => {
         image {
           url
         }
+        altText
       }
     }
   `)
@@ -35,7 +36,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="w-1/6">
-            <img className="z-10" src={data.contentfulImages.image.url + '?w=100&fm=gif&q=1'} />
+            <img className="z-10" alt={data.contentfulImages.altText} src={data.contentfulImages.image.url + '?w=100&fm=gif&q=1'} />
           </div>
         </div>
         <div className="flex justify-center items-end bg-olive text-white h-12 mt-10 pb-2">

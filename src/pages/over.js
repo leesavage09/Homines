@@ -5,13 +5,14 @@ import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 
 const OverPage = (props) => {
-  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=400&fm=gif&q=1'
+  const JumbotronSrc = props.data.contentfulImages.image.url + '?w=400&fm=gif&q=1'
+  const JumbotronAlt = props.data.contentfulImages.altText
   const quote = (<>'I AM' <br/> “Two of the most powerful words in existence, because you become what you put after them.”</>)
 
   return (
     <Layout>
       <Seo title="Over Selina" />
-      <Jumbotron title="OVER MIJ" imageSrc={ContactHeaderSrc} quote={quote} />
+      <Jumbotron title="OVER MIJ" imageSrc={JumbotronSrc} imageAlt={JumbotronAlt} quote={quote} />
     </Layout>
   )
 }
@@ -24,6 +25,7 @@ export const pageQuery = graphql`
       image {
         url
       }
+      altText
   }
 }
 `

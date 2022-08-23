@@ -5,13 +5,14 @@ import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 
 const ManuelePage = (props) => {
-  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=485&fm=gif&q=1'
+  const JumbotronSrc = props.data.contentfulImages.image.url + '?w=485&fm=gif&q=1'
+  const JumbotronAlt = props.data.contentfulImages.altText
   const quote = `“Listen to your body. It’s smarter than you are.“`
 
   return (
     <Layout>
       <Seo title="Manuele- &amp; Fysiotherapie" />
-      <Jumbotron title="MANUELE- &amp; FYSIOTHERAPIE" imageSrc={ContactHeaderSrc} quote={quote} />
+      <Jumbotron title="MANUELE- &amp; FYSIOTHERAPIE" imageSrc={JumbotronSrc} imageAlt={JumbotronAlt} quote={quote} />
     </Layout>
   )
 }
@@ -24,6 +25,7 @@ export const pageQuery = graphql`
       image {
         url
       }
+      altText
   }
 }
 `
