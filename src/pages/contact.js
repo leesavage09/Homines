@@ -11,9 +11,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const ContactPage = (props) => {
   const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=444&fm=gif&q=1'
   const quote = `“I make it a point to practice self-care. I make an appointment with myself”`
-
-
-  const LocationIconSrc = props.data.contentfulIcons.icon.url
   const MainImageSrc = props.data.contentfulPhotos.photo.url + '?w=377&fm=jpg&q=80'
 
   return (

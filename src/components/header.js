@@ -1,20 +1,8 @@
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 import { useLocation } from '@reach/router';
 
 const Header = (props) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
-
   return (
     <header className="bg-olive h-28 flex justify-center items-center">
       <nav className="flex flex-row space-x-16 items-center text-xl">
