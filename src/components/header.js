@@ -35,7 +35,7 @@ export default Header
 const MenuItem = ({ to, children, className }) => {
   const { pathname } = useLocation();
 
-  const linkStyle = pathname === to ? "text-white" : ""
+  const linkStyle = pathname === to ? "text-white no-underline" : "no-underline"
   const style = className + " " + linkStyle
 
   return (

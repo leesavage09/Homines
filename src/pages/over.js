@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 
 const OverPage = (props) => {
-  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=485&fm=gif&q=1'
+  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=400&fm=gif&q=1'
   const quote = (<>'I AM' <br/> “Two of the most powerful words in existence, because you become what you put after them.”</>)
 
   return (
