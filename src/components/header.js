@@ -18,7 +18,7 @@ const Header = (props) => {
   return (
     <header className="bg-olive h-28 flex justify-center items-center">
       <nav className="flex flex-row space-x-16 items-center text-xl">
-        <h1>
+        <h1 className="text-4xl text-white">
           <MenuItem to="/">HOMINES</MenuItem>
         </h1>
         <MenuItem to="/manuele-fysiotherapie">MANUELE- &amp;<br />FYSIOTHERAPIE</MenuItem>
