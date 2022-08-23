@@ -11,4 +11,7 @@
       color: #707070;
       font-weight: bold;
     }
+    h1 {
+      @apply text-5xl;
+    }
   }
