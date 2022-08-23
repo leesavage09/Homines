@@ -13,11 +13,19 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-        <main className="text-center mt-10">{children}</main>
-        <footer className="flex justify-center items-end bg-olive text-white h-12 mt-10 pb-2">
-          {`© ${new Date().getFullYear()}`}
-          {` - Alle rechten voorbehouden `}
-        </footer>
+      <main className="mt-10 text-center">
+        {children}
+      </main>
+      <footer className="">
+        <div className="flex justify-center items-end bg-olive text-white h-12 mt-10 pb-2">
+          {`© ${new Date().getFullYear()} - Alle rechten voorbehouden `}
+        </div>
+        <div className="flex justify-center text-center mt-8 mb-8">
+          {`Description: Homines Bergen op Zoom - Neem contact op om een afspraak te maken voor`}
+          <br />
+          {`manuele- & fysiotherapie of om een liveliness traject te starten.`}
+        </div>
+      </footer>
     </>
   )
 }

@@ -1,15 +1,29 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Jumbotron from "../components/jumbotron"
 
-const ManuelePage = () => (
-  <Layout>
-    <Seo title="Over Selina" />
-    <h1>over</h1>
-  </Layout>
-)
+const OverPage = (props) => {
+  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=300&fm=gif&q=1'
+  const quote = (<>'I AM' <br/> “Two of the most powerful words in existence, because you become what you put after them.”</>)
 
-export default ManuelePage
+  return (
+    <Layout>
+      <Seo title="Over Selina" />
+      <Jumbotron title="OVER MIJ" imageSrc={ContactHeaderSrc} quote={quote} />
+    </Layout>
+  )
+}
+
+export default OverPage
+
+export const pageQuery = graphql`
+  query OverPageQuery {
+    contentfulImages(name: {eq: "Over Selina Header"}) {
+      image {
+        url
+      }
+  }
+}
+`

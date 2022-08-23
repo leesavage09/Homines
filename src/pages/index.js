@@ -1,16 +1,29 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Jumbotron from "../components/jumbotron"
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p> 
-  </Layout>
-)
+const IndexPage = (props) => {
+  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=300&fm=gif&q=1'
+  const quote = `“In ons organisme is er een complexe wisselwerking tussen lichaam, geest en ziel; alles is voortdurend en niets staat ooit stil. Het gaat om het doelgericht activeren van de basisregulatie en de zelfhelende krachten van het lichaam.”`
+  
+  return (
+    <Layout>
+      <Seo title="Home" />
+      <Jumbotron imageSrc={ContactHeaderSrc} quote={quote} />
+    </Layout>
+  )
+}
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query IndexPageQuery {
+    contentfulImages(name: {eq: "Homines Text Logo"}) {
+      image {
+        url
+      }
+  }
+}
+`
