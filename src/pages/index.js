@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 
 const IndexPage = (props) => {
-  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=300&fm=gif&q=1'
+  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=308&fm=gif&q=1'
   const quote = `“In ons organisme is er een complexe wisselwerking tussen lichaam, geest en ziel; alles is voortdurend en niets staat ooit stil. Het gaat om het doelgericht activeren van de basisregulatie en de zelfhelende krachten van het lichaam.”`
   
   return (

@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 
 const ManuelePage = (props) => {
-  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=300&fm=gif&q=1'
+  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=485&fm=gif&q=1'
   const quote = `“Listen to your body. It’s smarter than you are.“`
 
   return (

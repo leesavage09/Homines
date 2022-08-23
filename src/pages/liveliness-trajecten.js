@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 
 const LivelinessPage = (props) => {
-  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=300&fm=gif&q=1'
+  const ContactHeaderSrc = props.data.contentfulImages.image.url + '?w=485&fm=gif&q=1'
   const quote = `“The body is a self-healing organism, so it’s your job to nurture it and clearing things out of the way so the body can heal itself.”`
 
   return (
