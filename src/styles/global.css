@@ -11,8 +11,14 @@
       color: #707070;
       font-weight: bold;
     }
+    a {
+      text-decoration: underline;
+    }
     h1 {
       @apply text-5xl;
+    }
+    h2 {
+      @apply text-xl;
     }
     h3 {
       @apply text-xl;
