@@ -6,7 +6,7 @@ import Jumbotron from "../components/jumbotron"
 import Section from "../components/section"
 import ButtonLink from "../components/buttonLink"
 
-const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage } }) => (
+const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, BeyunaImage, HeroesImage } }) => (
   <Layout>
     <Seo title="Home" />
     <Jumbotron imageSrc={jumboImage.image.url + '?w=308&fm=gif&q=1'} imageAlt={jumboImage.altText} quote={`“In ons organisme is er een complexe wisselwerking tussen lichaam, geest en ziel; alles is voortdurend en niets staat ooit stil. Het gaat om het doelgericht activeren van de basisregulatie en de zelfhelende krachten van het lichaam.”`} />
@@ -36,6 +36,40 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage } }
       </div>
     </Section>
 
+    <Section colour="bg-grey" className="text-white py-8">
+      <h2 className="pb-6 text-2xl">Voeding &amp; Supplementen</h2>
+      <p className="text-xl pb-6">“The body is both a temple and a perfect machine. Our bodies have within them a healing potential, and we nourish this potential with the pure and simple foods found in nature.” - Angela Lindvall</p>
+
+      <div className="w-4/5 border-solid border-t-4 border-white m-auto pb-8" />
+
+      <div className="flex pb-16">
+        <p className="w-4/6">Je bent wat je eet en voor mij is dat heel simpel: “Wij zijn natuur, een levend wezen en dat betekent dat we ons ook moeten voeden met leven.” De juiste voeding helpt je om aan voldoende nutriënten te komen en zo ziektes en kwaaltjes te voorkomen. De kwaliteit van voedsel in de huidige maatschappij is echter een stuk lager dan 50 jaar gelden. Dit heeft te maken met de overvoed aan voedsel die we tegenwoordig kennen en bodemverarming door het overmatig gebruik van onze aarde. Hierdoor is het nemen van supplementen belangrijker dan ooit. Helaas zitten de meeste supplementen ook vol met meuk, waardoor je lichaam de nutriënten niet goed kan opnemen en het dus nog steeds niet het gewenste effect heeft. Het word je dus niet makkelijk gemaakt, maar ik help je er graag bij om jezelf gezonder te voeden. Neem contact met mij op als jij gezonder wil eten of een van mijn presentaties bij wil wonen voor meer informatie.</p>
+        <div className="flex flex-col justify-center text-center w-2/6 border-solid border-4 border-white p-8 ml-8" >
+          <p>In Samenwerking Met</p>
+          <img className="m-auto my-0" width="200px" src={BeyunaImage.image.url} alt={BeyunaImage.altText} />
+        </div>
+      </div>
+
+      <ButtonLink className="pb-6" linkTo="/contact">NEEM CONTACT OP</ButtonLink>
+    </Section>
+
+    <Section className="py-8">
+      <h2 className="pb-6 text-2xl">Fysiek Fit</h2>
+      <p className="text-xl pb-6">“Movement is a medicine for creating change in a human’s physical, emotional and mental state.”</p>
+
+      <div className="w-4/5 border-solid border-t-4 border-grey m-auto pb-8" />
+
+      <div className="flex pb-16">
+        <p className="w-4/6">Mensen in beweging krijgen; niet alleen fysiek maar ook mentaal. Bewegen is een vorm van ontladen & opladen, je lijf leren kennen en je grenzen opzoeken. Omdat ik geloof dat zowel lichaam en geest in beweging moeten zijn om gezond en fit te worden en te blijven heb ik samen met mijn man Home of Heroes opgericht. Het is een plek waar iedereen die aan zichzelf werkt zijn of haar eigen Hero is. Met functional fitness, fysieke uitdagingen en vooral heel veel motivatie willen wij jou helpen fitter, sterker en gezonder te worden. Wil jij deel uitmaken van deze community of checken wat de opties zijn voor jou? Schroom niet om contact met mij op te nemen voor meer informatie over groepstrainingen of revalidatie.</p>
+        <div className="flex flex-col justify-center text-center w-2/6 border-solid border-4 border-olive p-8 ml-8" >
+          <p>In Samenwerking Met</p>
+          <img className="m-auto my-0" width="200px" src={HeroesImage.image.url} alt={HeroesImage.altText} />
+        </div>
+      </div>
+
+      <ButtonLink className="pb-6" linkTo="/contact">NEEM CONTACT OP</ButtonLink>
+    </Section>
+
 
   </Layout >
 )
@@ -58,6 +92,18 @@ export const pageQuery = graphql`
       altText
     }
     LivelinessImage: contentfulImages(name: {eq: "Liveliness trajecten header"}) {
+      image {
+        url
+      }
+      altText
+    }
+    BeyunaImage: contentfulImages(name: {eq: "Beyuna logo"}) {
+      image {
+        url
+      }
+      altText
+    }
+    HeroesImage: contentfulImages(name: {eq: "Home of Heroes Logo"}) {
       image {
         url
       }
