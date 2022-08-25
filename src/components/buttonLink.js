@@ -1,5 +1,5 @@
 import * as React from "react"
-import { navigate, Link } from "gatsby"
+import { Link } from "gatsby"
 
 const ButtonLink = ({ linkTo, children }) => {
     return (
