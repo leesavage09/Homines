@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
       <footer className="">
-        <div className="flex flex-row justify-between ml-20 mr-20 mt-20">
+        <div className="flex flex-row justify-between py-10 px-32">
           <div className="w-1/6">
             <h2>DIENSTEN</h2>
             <p>Manuele- &amp; Fysiotherapie Liveliness Trajecten Voeding &amp; Supplementen Fysiek Fit</p>
@@ -35,14 +35,14 @@ const Footer = () => {
             <a href="mailto:Hominesboz@gmail.com">Hominesboz@gmail.com</a>
             </p>
           </div>
-          <div className="w-1/6">
+          <div>
             <img className="z-10" alt={data.contentfulImages.altText} src={data.contentfulImages.image.url + '?w=100&fm=gif&q=1'} />
           </div>
         </div>
-        <div className="flex justify-center items-end bg-olive text-white h-12 mt-10 pb-2">
+        <div className="flex justify-center items-center bg-olive text-white h-12 px-32">
           {`© ${new Date().getFullYear()} - Alle rechten voorbehouden `}
         </div>
-        <div className="flex justify-center text-center mt-8 mb-8">
+        <div className="flex justify-center text-center pt-4 pb-10 px-32">
           {`Description: Homines Bergen op Zoom - Neem contact op om een afspraak te maken voor`}
           <br />
           {`manuele- & fysiotherapie of om een liveliness traject te starten.`}
