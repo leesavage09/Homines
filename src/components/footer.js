@@ -43,7 +43,7 @@ const Footer = () => {
         <Section colour="bg-olive" padding="px-32" className="flex justify-center items-center text-white h-12">
           {`© ${new Date().getFullYear()} - Alle rechten voorbehouden `}
         </Section>
-        <Section className="flex justify-center text-center pt-4 pb-10 px-32">
+        <Section padding="pt-6 pb-20" className="flex justify-center text-center">
           {`Description: Homines Bergen op Zoom - Neem contact op om een afspraak te maken voor`}
           <br />
           {`manuele- & fysiotherapie of om een liveliness traject te starten.`}
