@@ -1,5 +1,6 @@
 import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import Section from "./section"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -15,7 +16,7 @@ const Footer = () => {
 
   return (
       <footer className="">
-        <div className="flex flex-row justify-between py-10 px-32">
+        <Section className="flex flex-row justify-between">
           <div className="w-1/6">
             <h2>DIENSTEN</h2>
             <p>Manuele- &amp; Fysiotherapie Liveliness Trajecten Voeding &amp; Supplementen Fysiek Fit</p>
@@ -38,15 +39,15 @@ const Footer = () => {
           <div>
             <img className="z-10" alt={data.contentfulImages.altText} src={data.contentfulImages.image.url + '?w=100&fm=gif&q=1'} />
           </div>
-        </div>
-        <div className="flex justify-center items-center bg-olive text-white h-12 px-32">
+        </Section>
+        <Section colour="bg-olive" padding="px-32" className="flex justify-center items-center text-white h-12">
           {`© ${new Date().getFullYear()} - Alle rechten voorbehouden `}
-        </div>
-        <div className="flex justify-center text-center pt-4 pb-10 px-32">
+        </Section>
+        <Section className="flex justify-center text-center pt-4 pb-10 px-32">
           {`Description: Homines Bergen op Zoom - Neem contact op om een afspraak te maken voor`}
           <br />
           {`manuele- & fysiotherapie of om een liveliness traject te starten.`}
-        </div>
+        </Section>
       </footer>
   )
 }
