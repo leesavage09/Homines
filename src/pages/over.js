@@ -18,7 +18,7 @@ const OverPage = ({ data: { JumboImage, SelinaPhoto, SelinaQualifications } }) =
     </Section>
 
     <Section colour="bg-olive" className="text-white">
-      <h2 className=" text-2xl pb-8">Opleidingen &amp; Cursussen</h2>
+      <h2 className=" text-2xl">Opleidingen &amp; Cursussen</h2>
       <ul className="text-left inline-block">
         {SelinaQualifications.list.map((item) => {
           return <li className="pb-2"><FontAwesomeIcon className="text-xl pr-4" icon={faGraduationCap} />{item}</li>

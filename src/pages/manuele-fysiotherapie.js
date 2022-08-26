@@ -29,8 +29,8 @@ const FysiotherapiePage = ({ data: { JumbotronImage, FysiotherapiePhoto } }) => 
     </Section>
 
     <Section colour="bg-olive" >
-      <h2 className="mb-6">Maak een afspraak</h2>
-      <p className="mb-10">Heb jij fysieke klachten? En wil je er nu echt van af?<br />Maak een afspraak en dan gaan we samen met die puzzel aan de slag.</p>
+      <h2>Maak een afspraak</h2>
+      <p>Heb jij fysieke klachten? En wil je er nu echt van af?<br />Maak een afspraak en dan gaan we samen met die puzzel aan de slag.</p>
       <ButtonLink className="bg-white text-grey mb-8" linkTo="/contact">CONTACT</ButtonLink>
     </Section>
 

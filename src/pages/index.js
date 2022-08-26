@@ -18,8 +18,8 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
           <img src={fysiotherapieImage.image.url + '?h=265&fm=gif&q=1'} alt={fysiotherapieImage.altText} />
 
         </div>
-        <h2 className="pb-6">Manuele- en Fysiotherapie</h2>
-        <p className="pb-6">
+        <h2>Manuele- en Fysiotherapie</h2>
+        <p>
           Manuele therapie is een specialisatie van fysiotherapie. Bij Homines behandel ik je niet alleen, maar achterhaal ik ook de oorzaak van de klachten in je gewrichten, spieren en zenuwfuncties. Daarbij houd ik rekening met gerelateerde beperkingen tijdens de dagelijkse activiteiten. Mijn doel is om jou zo te behandelen, dat je niet meer terugkomt met dezelfde klachten.
         </p>
         <ButtonLink linkTo="/manuele-fysiotherapie">MEER INFO</ButtonLink>
@@ -29,8 +29,8 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         <div className="border-solid border-4 border-olive mb-6 flex justify-center" >
           <img src={LivelinessImage.image.url + '?h=265&fm=gif&q=1'} alt={LivelinessImage.altText} />
         </div>
-        <h2 className="pb-6">Liveliness Trajecten</h2>
-        <p className="pb-6">
+        <h2>Liveliness Trajecten</h2>
+        <p>
           Met een liveliness traject investeer je in jezelf en sta jij op nummer 1. In korte gaan we samen aan de slag en zal je kennis opdoen, verbanden leggen en resultaten behalen, zodat jij je optimale zelf kunt zijn. Het resultaat zijn een gezonde lichaam en geest en voldoende energie om het leven aan te kunnen. Gun jij jezelf de beste versie van jezelf? Ga dan de uitdaging met mij aan.
         </p>
         <ButtonLink linkTo="/liveliness-trajecten">MEER INFO</ButtonLink>
@@ -38,8 +38,8 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
     </Section>
 
     <Section colour="bg-grey" className="text-white py-8">
-      <h2 className="pb-6 text-2xl">Voeding &amp; Supplementen</h2>
-      <p className="text-xl pb-6">“The body is both a temple and a perfect machine. Our bodies have within them a healing potential, and we nourish this potential with the pure and simple foods found in nature.” - Angela Lindvall</p>
+      <h2 className="text-2xl">Voeding &amp; Supplementen</h2>
+      <p className="text-xl">“The body is both a temple and a perfect machine. Our bodies have within them a healing potential, and we nourish this potential with the pure and simple foods found in nature.” - Angela Lindvall</p>
 
       <div className="w-4/5 border-solid border-t-4 border-white m-auto pb-8" />
 
@@ -55,8 +55,8 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
     </Section>
 
     <Section className="py-8 mb-10">
-      <h2 className="pb-6 text-2xl">Fysiek Fit</h2>
-      <p className="text-xl pb-6">“Movement is a medicine for creating change in a human’s physical, emotional and mental state.”</p>
+      <h2 className="text-2xl">Fysiek Fit</h2>
+      <p className="text-xl">“Movement is a medicine for creating change in a human’s physical, emotional and mental state.”</p>
 
       <div className="w-4/5 border-solid border-t-4 border-grey m-auto pb-8" />
 

@@ -30,7 +30,7 @@ const ContactPage = (props) => {
         </div>
         <div className="w-3/6 flex justify-center items-start">
           <div className="border-solid border-4 border-olive p-4">
-            <h2 className="my-4">
+            <h2>
               HominesBoZ
             </h2>
             <ul className="flex flex-col justify-start items-start">
