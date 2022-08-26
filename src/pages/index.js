@@ -5,8 +5,9 @@ import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import Section from "../components/section"
 import ButtonLink from "../components/buttonLink"
+import ContactSection from "../components/contactSection"
 
-const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, BeyunaImage, HeroesImage } }) => (
+const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, BeyunaImage, HeroesImage, SelinaPhoto } }) => (
   <Layout>
     <Seo title="Home" />
     <Jumbotron imageSrc={jumboImage.image.url + '?w=308&fm=gif&q=1'} imageAlt={jumboImage.altText} quote={`“In ons organisme is er een complexe wisselwerking tussen lichaam, geest en ziel; alles is voortdurend en niets staat ooit stil. Het gaat om het doelgericht activeren van de basisregulatie en de zelfhelende krachten van het lichaam.”`} />
@@ -50,10 +51,10 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         </div>
       </div>
 
-      <ButtonLink className="pb-6" linkTo="/contact">NEEM CONTACT OP</ButtonLink>
+      <ButtonLink linkTo="/contact">NEEM CONTACT OP</ButtonLink>
     </Section>
 
-    <Section className="py-8">
+    <Section className="py-8 mb-10">
       <h2 className="pb-6 text-2xl">Fysiek Fit</h2>
       <p className="text-xl pb-6">“Movement is a medicine for creating change in a human’s physical, emotional and mental state.”</p>
 
@@ -67,8 +68,12 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         </div>
       </div>
 
-      <ButtonLink className="pb-6" linkTo="/contact">NEEM CONTACT OP</ButtonLink>
+      <ButtonLink linkTo="/contact">NEEM CONTACT OP</ButtonLink>
     </Section>
+
+    <ContactSection>
+      <ButtonLink className="bg-white text-grey mb-8" linkTo="/contact">CONTACT</ButtonLink>
+    </ContactSection>
 
 
   </Layout >
