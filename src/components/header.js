@@ -4,8 +4,10 @@ import { useLocation } from '@reach/router';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const Header = (props) => {
+const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
+  const onShowMobileMenu = () => setShowMobileMenu(!showMobileMenu)
+
   return (
     <>
       <header className="bg-olive h-28 flex md:justify-center">
@@ -19,7 +21,15 @@ const Header = (props) => {
           <MenuItem to="/contact">CONTACT</MenuItem>
         </nav>
         <nav className="flex md:hidden items-center text-4xl text-white pl-10">
-          <span onClick={() => setShowMobileMenu(!showMobileMenu)}><FontAwesomeIcon className="pr-8" icon={faBars} /></span>
+          <button
+            onKeyDown={onShowMobileMenu}
+            onClick={onShowMobileMenu}
+          >
+            <FontAwesomeIcon
+              className="pr-8"
+              icon={faBars}
+            />
+          </button>
           <h1 className="">
             <MenuItem to="/">HOMINES</MenuItem>
           </h1>
