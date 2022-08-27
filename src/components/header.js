@@ -8,9 +8,9 @@ const Header = (props) => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
   return (
     <>
-      <header className="bg-olive h-28 flex xl:justify-center">
-        <nav className="hidden xl:flex space-x-16  items-center text-xl  ">
-          <h1 className="text-4xl text-white">
+      <header className="bg-olive h-28 flex md:justify-center">
+        <nav className="hidden md:flex space-x-6 lg:space-x-16 items-center text-xl  ">
+          <h1 className="text-xl lg:text-4xl">
             <MenuItem to="/">HOMINES</MenuItem>
           </h1>
           <MenuItem to="/manuele-fysiotherapie">MANUELE- &amp;<br />FYSIOTHERAPIE</MenuItem>
@@ -18,8 +18,8 @@ const Header = (props) => {
           <MenuItem to="/over">OVER MIJ</MenuItem>
           <MenuItem to="/contact">CONTACT</MenuItem>
         </nav>
-        <nav className="flex xl:hidden items-center text-4xl text-white pl-10">
-          <a onClick={() => setShowMobileMenu(!showMobileMenu)}><FontAwesomeIcon className="pr-8" icon={faBars} /></a>
+        <nav className="flex md:hidden items-center text-4xl text-white pl-10">
+          <span onClick={() => setShowMobileMenu(!showMobileMenu)}><FontAwesomeIcon className="pr-8" icon={faBars} /></span>
           <h1 className="">
             <MenuItem to="/">HOMINES</MenuItem>
           </h1>

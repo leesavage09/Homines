@@ -100,7 +100,7 @@ export const pageQuery = graphql`
       }
       altText
     }
-    fysiotherapieImage: contentfulImages(name: {eq: "Manuele- & fysiotherapie header"}) {
+    fysiotherapieImage: contentfulImages(name: {eq: "Manuele- & fysiotherapie"}) {
       image {
         url
       }
