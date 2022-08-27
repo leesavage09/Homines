@@ -24,7 +24,7 @@ const ContactSection = ({ children }) => {
                         alt={data.SelinaPhoto.altText}
                     />
                 </div>
-                <div className="w-3/6 flex flex-col">
+                <div className="w-5/6 sm:w-4/6 md:w-3/6 flex flex-col">
                     <h2>Haai!</h2>
                     <p>
                         Ik ben Selina en ik heb een enorme fascinatie voor mens, ziel en lichaam. Het is dan ook niet voor niets dat ik gepassioneerd ben in wat ik doe: Ervoor zorgen dat jij de beste versie van jezelf bent.<br/><br/>
