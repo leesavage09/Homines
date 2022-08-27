@@ -36,7 +36,7 @@ const LivelinessPage = ({ data: { JumbotronImage, SelinaLivelinessPhoto, Testimo
       </div>
     </Section>
 
-    <Section colour="bg-grey text-white" className="flex justify-center text-left">
+    <Section colour="bg-grey text-white" className="flex flex-col lg:flex-row items-center justify-center text-left">
       <div>
         <h2>Wat kun je van een liveliness traject verwachten?</h2>
         <p>Tijdens een liveliness traject sta je er niet alleen voor. Ik begeleid je tijdens het gehele proces en we stellen een plan op dat bij jou past en waar jij je in kunt vinden. Met een liveliness traject krijg je:</p>
@@ -50,7 +50,7 @@ const LivelinessPage = ({ data: { JumbotronImage, SelinaLivelinessPhoto, Testimo
         </ul>
       </div>
       <img
-        className="relative ml-10 -mb-32 -top-32 z-10 w-4/6 p-10 border-solid border-4 border-olive bg-white"
+        className="order-first lg:order-last lg:relative ml-10 lg:-mb-32 lg:-top-32 z-10 w-4/6 p-4 sm:p-6 md:p-8 lg:p-10 border-solid border-4 border-olive bg-white"
         src={SelinaLivelinessPhoto.photo.url + '?w=377&fm=jpg&q=80'}
         alt={SelinaLivelinessPhoto.altText}
       />
@@ -58,9 +58,9 @@ const LivelinessPage = ({ data: { JumbotronImage, SelinaLivelinessPhoto, Testimo
 
     <Section>
       <h2>Wat anderen zeggen</h2>
-      <div className="flex space-x-4">
+      <div className="flex flex-col md:flex-row md:space-x-4 justify-center">
         {Testimonials.edges.map(({ node }) => (
-          <div key={node.id} className="border-solid border-4 border-olive w-2/6 p-4">
+          <div key={node.id} className="border-solid border-4 border-olive w-100 mb-8 md:w-2/6 p-4">
             <FontAwesomeIcon className="text-olive text-mega mb-8" icon={faComments} />
             <p>
               {renderRichText(node.testimonial)}

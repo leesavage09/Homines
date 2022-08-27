@@ -1,11 +1,13 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { useLocation } from '@reach/router';
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Header = (props) => {
   return (
-    <header className="bg-olive h-28 flex justify-center items-center">
-      <nav className="flex flex-row space-x-16 items-center text-xl">
+    <header className="bg-olive h-28 flex xl:justify-center items-center">
+      <nav className="hidden xl:flex flex-row space-x-16 items-center text-xl  ">
         <h1 className="text-4xl text-white">
           <MenuItem to="/">HOMINES</MenuItem>
         </h1>
@@ -13,6 +15,12 @@ const Header = (props) => {
         <MenuItem to="/liveliness-trajecten">LIVELINESS<br />TRAJECTEN</MenuItem>
         <MenuItem to="/over">OVER MIJ</MenuItem>
         <MenuItem to="/contact">CONTACT</MenuItem>
+      </nav>
+      <nav className="flex xl:hidden flex-row items-center text-4xl text-white pl-10">
+        <a onClick={() => alert('hi')}><FontAwesomeIcon className="pr-8" icon={faBars} /></a>
+        <h1 className="">
+          <MenuItem to="/">HOMINES</MenuItem>
+        </h1>
       </nav>
     </header>
   )

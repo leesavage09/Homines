@@ -17,13 +17,13 @@ const FysiotherapiePage = ({ data: { JumbotronImage, FysiotherapiePhoto } }) => 
     />
 
     <Section className="text-left">
-      <div className="flex space-x-11 mb-8">
+      <div className="flex flex-col lg:flex-row lg:space-x-11 mb-8">
         <p>
           Binnen de fysiotherapie is manuele therapie een specialisatie die zich richt op het vertalen van klachten in gewrichten, spieren en zenuwfuncties en gerelateerde beperkingen in de dagelijkse activiteiten. Als je dergelijke klachten ervaart, heeft dit vaak met persoonlijke en externe factoren te maken. Samen met jou kijk ik naar deze factoren om te kunnen vertalen wat jouw lichaam je wil vertellen.<br /><br />
           Als manueel therapeut ben ik altijd bezig om verbanden te leggen tussen wat het lichaam jou vertelt en wat er binnen in jou gebeurt, zowel fysiek als mentaal. Deze verbanden zijn belangrijk omdat alles met elkaar in verbinding staat. Zo hoeft de plek waar jij pijn voelt, bijvoorbeeld niet per se de plek of oorzaak van de pijn te zijn.
         </p>
         <img
-          className="z-10 relative -top-10 w-4/6 p-10 border-solid border-4 border-olive bg-white"
+          className="z-10 lg:relative -top-10 w-4/6 p-2 sm:p-6 md:p-8 lg:p-10 border-solid border-4 border-olive bg-white self-center object-contain"
           src={FysiotherapiePhoto.photo.url + '?w=308&fm=jpg&q=80'}
           alt={FysiotherapiePhoto.altText}
         />

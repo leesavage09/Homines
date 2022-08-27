@@ -22,14 +22,14 @@ const ContactPage = (props) => {
       <Seo title="Contact" />
       <Jumbotron title="Contact" imageSrc={ContactHeaderSrc} imageAlt={ContactHeaderAlt} quote={quote} />
 
-      <Section className="flex justify-center">
-        <div className="w-3/6 flex items-center">
+      <Section className="flex flex-col lg:flex-row mb-20 lg:mb-0 justify-center items-center">
+        <div className="w-6/6 md:w-5/6 lg:w-3/6 flex items-center">
           <p className="px-20">
-            Neem contact met mij op om een afspraak te maken voor manuele- &amp; fysiotherapie of om een liveliness traject te starten.<br/><br/>
+            Neem contact met mij op om een afspraak te maken voor manuele- &amp; fysiotherapie of om een liveliness traject te starten.<br /><br />
             Daarnaast kun je ook bij mij terecht voor meer informatie over voeding &amp; suppletie en fysiek fit.
           </p>
         </div>
-        <div className="w-3/6 flex justify-center items-start">
+        <div className="w-6/6 md:w-5/6 lg:w-3/6 flex justify-center items-start">
           <div className="border-solid border-4 border-olive p-4">
             <h2>
               HominesBoZ

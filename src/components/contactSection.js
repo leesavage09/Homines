@@ -16,15 +16,15 @@ const ContactSection = ({ children }) => {
 
     return (
         <Section colour="bg-olive">
-            <div className="flex justify-center">
-                <div className="relative -top-20 w-3/6 flex justify-center ">
+            <div className="flex flex-col lg:flex-row justify-center items-center">
+                <div className="relative -top-28 -mb-28 w-3/6 flex justify-center ">
                     <img
-                        className="z-10 w-4/6 p-10 border-solid border-4 border-olive bg-white"
+                        className="z-10 w-4/6 p-4 sm:p-6 md:p-8 lg:p-10 border-solid border-4 border-olive bg-white self-center object-contain"
                         src={data.SelinaPhoto.photo.url + '?w=377&fm=jpg&q=80'}
                         alt={data.SelinaPhoto.altText}
                     />
                 </div>
-                <div className="w-3/6 flex flex-col -mb-20">
+                <div className="w-3/6 flex flex-col">
                     <h2>Haai!</h2>
                     <p>
                         Ik ben Selina en ik heb een enorme fascinatie voor mens, ziel en lichaam. Het is dan ook niet voor niets dat ik gepassioneerd ben in wat ik doe: Ervoor zorgen dat jij de beste versie van jezelf bent.<br/><br/>

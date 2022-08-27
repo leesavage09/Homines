@@ -16,18 +16,18 @@ const Footer = () => {
 
   return (
       <footer className="">
-        <Section className="flex flex-row justify-between">
-          <div className="w-1/6">
+        <Section className="flex flex-col md:flex-row justify-between">
+          <div className="w-5/6 md:w-1/6">
             <h2>DIENSTEN</h2>
             <p>Manuele- &amp; Fysiotherapie Liveliness Trajecten Voeding &amp; Supplementen Fysiek Fit</p>
           </div>
-          <div className="w-1/6">
+          <div className="w-5/6 md:w-1/6">
             <h2>OVER</h2>
             <p>
             Homines wordt beheerd door Selina Nouwt, een erkend opgeleide manueel- en fysiotherapeut.
             </p>
           </div>
-          <div className="w-1/6">
+          <div className="w-5/6 md:w-1/6">
             <h2>CONTACT</h2>
             <p>
             HominesBoZ<br/>
@@ -37,13 +37,13 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <img className="z-10" alt={data.contentfulImages.altText} src={data.contentfulImages.image.url + '?w=100&fm=gif&q=1'} />
+            <img className="z-10 hidden md:block" alt={data.contentfulImages.altText} src={data.contentfulImages.image.url + '?w=100&fm=gif&q=1'} />
           </div>
         </Section>
-        <Section colour="bg-olive" padding="px-32" className="flex justify-center items-center text-white h-12">
+        <Section colour="bg-olive" padding="px-6 sm:px-10 md:px-32" className="flex justify-center items-center text-white h-12">
           {`© ${new Date().getFullYear()} - Alle rechten voorbehouden `}
         </Section>
-        <Section padding="pt-6 pb-20" className="flex justify-center text-center">
+        <Section padding="pt-6 pb-20 px-4" className="flex justify-center text-center">
           {`Description: Homines Bergen op Zoom - Neem contact op om een afspraak te maken voor`}
           <br />
           {`manuele- & fysiotherapie of om een liveliness traject te starten.`}

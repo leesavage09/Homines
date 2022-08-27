@@ -12,8 +12,8 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
     <Seo title="Home" />
     <Jumbotron imageSrc={jumboImage.image.url + '?w=308&fm=gif&q=1'} imageAlt={jumboImage.altText} quote={`“In ons organisme is er een complexe wisselwerking tussen lichaam, geest en ziel; alles is voortdurend en niets staat ooit stil. Het gaat om het doelgericht activeren van de basisregulatie en de zelfhelende krachten van het lichaam.”`} />
 
-    <Section className="flex space-x-7">
-      <div>
+    <Section className="flex flex-col sm:flex-row sm:space-x-7">
+      <div className="mb-10">
         <div className="border-solid border-4 border-olive mb-6 flex justify-center" >
           <img src={fysiotherapieImage.image.url + '?h=265&fm=gif&q=1'} alt={fysiotherapieImage.altText} />
 
@@ -25,8 +25,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         </p>
         <OliveLinkButton to="/manuele-fysiotherapie">MEER INFO</OliveLinkButton>
       </div>
-      <div>
-
+      <div className="mb-10">
         <div className="border-solid border-4 border-olive mb-6 flex justify-center" >
           <img src={LivelinessImage.image.url + '?h=265&fm=gif&q=1'} alt={LivelinessImage.altText} />
         </div>
@@ -45,15 +44,15 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
 
       <div className="w-4/5 border-solid border-t-4 border-white m-auto pb-8" />
 
-      <div className="flex pb-16">
+      <div className="flex flex-col md:flex-row pb-16">
         <p className="w-4/6 text-left">
           Je bent wat je eet en voor mij is dat heel simpel: “Wij zijn natuur, een levend wezen en dat betekent dat we ons ook moeten voeden met leven.”<br /><br />
         De juiste voeding helpt je om aan voldoende nutriënten te komen en zo ziektes en kwaaltjes te voorkomen. De kwaliteit van voedsel in de huidige maatschappij is echter een stuk lager dan 50 jaar gelden. Dit heeft te maken met de overvoed aan voedsel die we tegenwoordig kennen en bodemverarming door het overmatig gebruik van onze aarde. Hierdoor is het nemen van supplementen belangrijker dan ooit.<br /><br />
         Helaas zitten de meeste supplementen ook vol met meuk, waardoor je lichaam de nutriënten niet goed kan opnemen en het dus nog steeds niet het gewenste effect heeft. Het word je dus niet makkelijk gemaakt, maar ik help je er graag bij om jezelf gezonder te voeden.<br /><br />
         Neem contact met mij op als jij gezonder wil eten of een van mijn presentaties bij wil wonen voor meer informatie.
         </p>
-        <div className="flex flex-col justify-center text-center w-2/6 border-solid border-4 border-white p-8 ml-8" >
-          <p>In Samenwerking Met</p>
+        <div className="flex flex-col justify-center self-center text-center w-4/6 sm:w-3/6 md:w-2/6 border-solid border-4 border-white p-2 sm:p-4 md:p-8 ml-8" >
+          <p>Independent sales representative</p>
           <img className="m-auto my-0" width="200px" src={BeyunaImage.image.url} alt={BeyunaImage.altText} />
         </div>
       </div>
@@ -67,13 +66,13 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
 
       <div className="w-4/5 border-solid border-t-4 border-grey m-auto pb-8" />
 
-      <div className="flex pb-16">
+      <div className="flex flex-col md:flex-row pb-16">
         <p className="w-4/6 text-left">
           Mensen in beweging krijgen; niet alleen fysiek maar ook mentaal. Bewegen is een vorm van ontladen &amp; opladen, je lijf leren kennen en je grenzen opzoeken.<br /><br />
           Omdat ik geloof dat zowel lichaam en geest in beweging moeten zijn om gezond en fit te worden en te blijven heb ik samen met mijn man Home of Heroes opgericht. Het is een plek waar iedereen die aan zichzelf werkt zijn of haar eigen Hero is. Met functional fitness, fysieke uitdagingen en vooral heel veel motivatie willen wij jou helpen fitter, sterker en gezonder te worden.<br /><br />
           Wil jij deel uitmaken van deze community of checken wat de opties zijn voor jou? Schroom niet om contact met mij op te nemen voor meer informatie over groepstrainingen of revalidatie.
         </p>
-        <div className="flex flex-col justify-center text-center w-2/6 border-solid border-4 border-olive p-8 ml-8" >
+        <div className="flex flex-col justify-center self-center text-center w-4/6 sm:w-3/6 md:w-2/6 border-solid border-4 border-olive p-2 sm:p-4 md:p-8 ml-8" >
           <p>In Samenwerking Met</p>
           <img className="m-auto my-0" width="200px" src={HeroesImage.image.url} alt={HeroesImage.altText} />
         </div>

@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const Section = ({ colour, padding="py-10 px-32", className, children }) => {
+const Section = ({ colour, padding="py-10 px-6 sm:px-10 md:px-32", className, children }) => {
     return (
         <section className={colour}>
             <div className={`${padding} mx-auto max-w-7xl`}>

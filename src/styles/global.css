@@ -15,7 +15,7 @@
       text-decoration: underline;
     }
     h1 {
-      @apply text-5xl my-8;
+      @apply text-3xl md:text-5xl my-8;
     }
     h2 {
       @apply text-xl my-6;
