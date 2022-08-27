@@ -16,7 +16,7 @@ const OverPage = ({ data: { JumboImage, SelinaPhoto, SelinaQualifications } }) =
       <p className="text-left">
         Waarom? Is dat zo? Dit zijn twee vragen die als een rode draad door mijn leven lopen. Ik kan mij nog van de middelbare school herinneren dat een docent tegen zei: “Selina neem dit nu maar gewoon aan, het is zo en hierop gaan we verder. Je kunt niet alles uitleggen, sommige dingen moet je gewoon aannemen.”<br /><br />
         Eigen-wijs en kritisch zijn eigenschappen die maken dat ik altijd op zoek ben naar nieuwe informatie om mijn kijk op dingen te verbreden en te zoeken naar het complete plaatje.<br /><br />
-        Tijdens mijn eerste werkjaren als fysiotherapeut kwam ik er achter dat ik het een en ander miste om mensen echt te kunnen helpen. Ik wist dat het plaatje niet compleet was, al kon ik niet precies vertellen wat eraan ontbrak. Jarenlang ben ik op zoek gegaan naar de missende informatie en inmiddels heb ik de verdieping gevonden in voeding &amp; suppletie, mindset, ademhaling en andere domeinen. Hoewel ik inmiddels heel veel missende informatie heb gevonden, weet ik dat er nog een hoop te ontdekken is en blijft ik mij verder in de materie verdiepen. De fascinatie voor mens, ziel en lichaam zorgt bij mij nu eenmaal voor een hongerigheid naar informatie.<br /><br />
+        Tijdens mijn eerste werkjaren als fysiotherapeut kwam ik er achter dat ik het een en ander miste om mensen echt te kunnen helpen. Ik wist dat het plaatje niet compleet was, al kon ik niet precies vertellen wat eraan ontbrak. Jarenlang ben ik op zoek gegaan naar de missende informatie en inmiddels heb ik de verdieping gevonden in voeding &amp; suppletie, mindset, ademhaling en andere domeinen. Hoewel ik inmiddels heel veel missende informatie heb gevonden, weet ik dat er nog een hoop te ontdekken is en blijf ik mij verder in de materie verdiepen. De fascinatie voor mens, ziel en lichaam zorgt bij mij nu eenmaal voor een hongerigheid naar informatie.<br /><br />
         De momenten dat ik niet gepassioneerd bezig ben met ‘werkzaamheden’ zoek ik graag de rust op in het bos of op het strand en verzamel ik informatie uit boeken, podcasts, artikelen, cursussen etc. Daarnaast heeft tijd spenderen met mijn man en vrienden ook een hoge prioriteit. En zoals mijn man zegt, is slapen een hobby van mij, maar wel onder het motto van selfcare ;).
       </p>
 
@@ -31,9 +31,9 @@ const OverPage = ({ data: { JumboImage, SelinaPhoto, SelinaQualifications } }) =
     <Section colour="bg-olive" className="text-white">
       <h2 className=" text-2xl">Opleidingen &amp; Cursussen</h2>
       <ul className="text-left inline-block">
-        {SelinaQualifications.list.map((item) => {
-          return <li className="pb-2"><FontAwesomeIcon className="text-xl pr-4" icon={faGraduationCap} />{item}</li>
-        })}
+        {SelinaQualifications.list.map((item) => (
+          <li key={item} className="pb-2"><FontAwesomeIcon className="text-xl pr-4" icon={faGraduationCap} />{item}</li>
+        ))}
       </ul>
     </Section>
   </Layout>

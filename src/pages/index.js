@@ -20,7 +20,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         </div>
         <h2>Manuele- en Fysiotherapie</h2>
         <p className="text-left">
-          Manuele therapie is een specialisatie van fysiotherapie. Bij Homines behandel ik je niet alleen, maar achterhaal ik ook de oorzaak van de klachten in je gewrichten, spieren en zenuwfuncties. Daarbij houd ik rekening met gerelateerde beperkingen tijdens de dagelijkse activiteiten.<br /><br />
+          Manuele therapie is een specialisatie binnen de fysiotherapie waarbij er voornamelijk vanuit de wervelkolom wordt gekeken naar complexe pijnklachten. Bij Homines behandel ik je niet alleen, maar ga ik samen met jou aan de slag om vanuit een holistisch perspectief te achterhalen waar de oorzaak vandaan komt.<br /><br />
           Mijn doel is om jou zo te behandelen, dat je niet meer terugkomt met dezelfde klachten.
         </p>
         <OliveLinkButton to="/manuele-fysiotherapie">MEER INFO</OliveLinkButton>
@@ -31,7 +31,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         </div>
         <h2>Liveliness Trajecten</h2>
         <p className="text-left">
-          Met een liveliness traject investeer je in jezelf en sta jij op nummer 1. In korte gaan we samen aan de slag en zal je kennis opdoen, verbanden leggen en resultaten behalen, zodat jij je optimale zelf kunt zijn. Het resultaat zijn een gezonde lichaam en geest en voldoende energie om het leven aan te kunnen.<br /><br />
+          Met een liveliness traject investeer je in jezelf en sta jij op nummer 1. In een korte periode gaan we samen aan de slag en zal je kennis opdoen, verbanden leggen en resultaten behalen, zodat jij je optimale zelf kunt zijn. Het resultaat is balans, zodat jij voldoende energie hebt om het leven te leven.<br /><br />
           Gun jij jezelf de beste versie van jezelf? Ga dan de uitdaging met mij aan.
         </p>
         <OliveLinkButton to="/liveliness-trajecten">MEER INFO</OliveLinkButton>
@@ -46,10 +46,10 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
 
       <div className="flex flex-col md:flex-row pb-16">
         <p className="w-4/6 text-left">
-          Je bent wat je eet en voor mij is dat heel simpel: “Wij zijn natuur, een levend wezen en dat betekent dat we ons ook moeten voeden met leven.”<br /><br />
-        De juiste voeding helpt je om aan voldoende nutriënten te komen en zo ziektes en kwaaltjes te voorkomen. De kwaliteit van voedsel in de huidige maatschappij is echter een stuk lager dan 50 jaar gelden. Dit heeft te maken met de overvoed aan voedsel die we tegenwoordig kennen en bodemverarming door het overmatig gebruik van onze aarde. Hierdoor is het nemen van supplementen belangrijker dan ooit.<br /><br />
-        Helaas zitten de meeste supplementen ook vol met meuk, waardoor je lichaam de nutriënten niet goed kan opnemen en het dus nog steeds niet het gewenste effect heeft. Het word je dus niet makkelijk gemaakt, maar ik help je er graag bij om jezelf gezonder te voeden.<br /><br />
-        Neem contact met mij op als jij gezonder wil eten of een van mijn presentaties bij wil wonen voor meer informatie.
+        Je bent wat je eet is voor mij heel simpel: “Wij zijn natuur, een levend wezen en dat betekent dat we ons ook moeten voeden met leven.”<br /><br />
+        De juiste voeding helpt je om aan voldoende nutriënten te komen en zo ziektes en kwaaltjes te voorkomen. De kwaliteit van voedsel in de huidige maatschappij is echter een stuk lager dan 50 jaar gelden. Dit heeft te maken met de overvoed aan voedsel die we tegenwoordig kennen. Er wordt veel geproduceerd en nagemaakt in de fabriek en daarbij hebben we te maken met bodemverarming doordat we kwantiteit verkiezen over kwaliteit. Hierdoor is het belangrijker dan ooit om ons bewuster te voeden en niet alleen te vullen.<br /><br />
+        Helaas zit zowel onze voeding als de meeste supplementen vol met meuk, waardoor je lichaam de nodige nutriënten niet goed kan opnemen en het dus nog steeds niet het gewenste effect heeft. Het word je dus niet makkelijk gemaakt, maar ik help je er graag bij.<br /><br />
+        Neem contact met mij op als jij bewuster wil eten of een van mijn presentaties bij wil wonen voor meer informatie.
         </p>
         <div className="flex flex-col justify-center self-center text-center w-4/6 sm:w-3/6 md:w-2/6 border-solid border-4 border-white p-2 sm:p-4 md:p-8 ml-8" >
           <p>Independent sales representative</p>

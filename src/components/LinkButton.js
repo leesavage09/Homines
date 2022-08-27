@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const LinkButton = ({ to, children, className }) => {
     return (
         <Link
-            className={`${className} px-6 py-2 rounded-3xl border-solid border-2 border-grey no-underline`}
+            className={`${className} px-6 py-3 rounded-3xl border-solid border-2 border-grey no-underline`}
             to={to}
         >
             {children}

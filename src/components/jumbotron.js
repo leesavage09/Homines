@@ -20,7 +20,7 @@ const Jumbotron = ({ title, imageSrc, imageAlt, quote }) => {
                 </div>
                 
             </Section>
-            <div className="relative left-0 w-screen -top-20 border-solid border-t-4 border-olive" />
+            <div className="w-screen border-solid border-t-4 border-olive" />
         </>
     )
 }
