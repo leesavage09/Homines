@@ -25,7 +25,8 @@ const ContactPage = (props) => {
       <Section className="flex justify-center">
         <div className="w-3/6 flex items-center">
           <p className="px-20">
-            Neem contact met mij op om een afspraak te maken voor manuele- &amp; fysiotherapie of om een liveliness traject te starten. Daarnaast kun je ook bij mij terecht voor meer informatie over voeding &amp; suppletie en fysiek fit.
+            Neem contact met mij op om een afspraak te maken voor manuele- &amp; fysiotherapie of om een liveliness traject te starten.<br/><br/>
+            Daarnaast kun je ook bij mij terecht voor meer informatie over voeding &amp; suppletie en fysiek fit.
           </p>
         </div>
         <div className="w-3/6 flex justify-center items-start">
