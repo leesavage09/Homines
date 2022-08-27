@@ -44,7 +44,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
 
       <div className="w-4/5 border-solid border-t-4 border-white m-auto pb-8" />
 
-      <div className="flex flex-col md:flex-row pb-16">
+      <div className="flex flex-col md:flex-row pb-16 items-center">
         <p className="w-4/6 text-left">
         Je bent wat je eet is voor mij heel simpel: “Wij zijn natuur, een levend wezen en dat betekent dat we ons ook moeten voeden met leven.”<br /><br />
         De juiste voeding helpt je om aan voldoende nutriënten te komen en zo ziektes en kwaaltjes te voorkomen. De kwaliteit van voedsel in de huidige maatschappij is echter een stuk lager dan 50 jaar gelden. Dit heeft te maken met de overvoed aan voedsel die we tegenwoordig kennen. Er wordt veel geproduceerd en nagemaakt in de fabriek en daarbij hebben we te maken met bodemverarming doordat we kwantiteit verkiezen over kwaliteit. Hierdoor is het belangrijker dan ooit om ons bewuster te voeden en niet alleen te vullen.<br /><br />
@@ -66,7 +66,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
 
       <div className="w-4/5 border-solid border-t-4 border-grey m-auto pb-8" />
 
-      <div className="flex flex-col md:flex-row pb-16">
+      <div className="flex flex-col md:flex-row pb-16 items-center">
         <p className="w-4/6 text-left">
           Mensen in beweging krijgen; niet alleen fysiek maar ook mentaal. Bewegen is een vorm van ontladen &amp; opladen, je lijf leren kennen en je grenzen opzoeken.<br /><br />
           Omdat ik geloof dat zowel lichaam en geest in beweging moeten zijn om gezond en fit te worden en te blijven heb ik samen met mijn man Home of Heroes opgericht. Het is een plek waar iedereen die aan zichzelf werkt zijn of haar eigen Hero is. Met functional fitness, fysieke uitdagingen en vooral heel veel motivatie willen wij jou helpen fitter, sterker en gezonder te worden.<br /><br />

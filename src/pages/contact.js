@@ -36,7 +36,7 @@ const ContactPage = (props) => {
             </h2>
             <ul className="flex flex-col justify-start items-start">
               <li className="my-2  flex flex-row">
-                <a href="tel:0653505456">
+                <a href="tel:+31653505456">
                   <FontAwesomeIcon className="text-xl pr-4 text-olive" icon={faMobileScreen} />0653505456</a>
               </li>
               <li className="my-2">
@@ -45,7 +45,7 @@ const ContactPage = (props) => {
               </li>
               <li className="my-2">
                 <FontAwesomeIcon className="text-xl pr-4 text-olive" icon={faLocationDot} />
-                <a href="https://www.google.com/maps/place/Bergen+op+Zoom,+Netherlands/@51.4850255,4.2192038,11.74z/data=!4m5!3m4!1s0x47c413332081048f:0x1dd39c8b40e3b686!8m2!3d51.4945758!4d4.2871622">Bergen op Zoom</a>
+                <a target="_blank" href="https://www.google.com/maps/place/Bergen+op+Zoom,+Netherlands/@51.4850255,4.2192038,11.74z/data=!4m5!3m4!1s0x47c413332081048f:0x1dd39c8b40e3b686!8m2!3d51.4945758!4d4.2871622">Bergen op Zoom</a>
               </li>
             </ul>
           </div>

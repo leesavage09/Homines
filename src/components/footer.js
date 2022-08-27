@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Section from "./section"
 
 const Footer = () => {
@@ -19,7 +19,12 @@ const Footer = () => {
         <Section className="flex flex-col md:flex-row justify-between">
           <div className="w-5/6 md:w-1/6">
             <h2>DIENSTEN</h2>
-            <p>Manuele- &amp; Fysiotherapie Liveliness Trajecten Voeding &amp; Supplementen Fysiek Fit</p>
+            <ul className="">
+              <li className="mb-2" ><Link to="/manuele-fysiotherapie">Manuele- &amp; Fysiotherapie</Link></li>
+              <li className="mb-2" ><Link to="/liveliness-trajecten">Liveliness Trajecten</Link></li>
+              <li className="mb-2" >Voeding &amp; Supplementen</li>
+              <li className="mb-2" >Fysiek Fit</li>
+            </ul>
           </div>
           <div className="w-5/6 md:w-1/6">
             <h2>OVER</h2>
@@ -31,8 +36,8 @@ const Footer = () => {
             <h2>CONTACT</h2>
             <p>
             HominesBoZ<br/>
-            <a href="https://www.google.com/maps/place/Bergen+op+Zoom,+Netherlands/@51.4850255,4.2192038,11.74z/data=!4m5!3m4!1s0x47c413332081048f:0x1dd39c8b40e3b686!8m2!3d51.4945758!4d4.2871622">Bergen op Zoom</a><br/>
-            <a href="tel:0653505456">0653505456</a><br/>
+            <a target="_blank" href="https://www.google.com/maps/place/Bergen+op+Zoom,+Netherlands/@51.4850255,4.2192038,11.74z/data=!4m5!3m4!1s0x47c413332081048f:0x1dd39c8b40e3b686!8m2!3d51.4945758!4d4.2871622">Bergen op Zoom</a><br/>
+            <a href="tel:+31653505456">0653505456</a><br/>
             <a href="mailto:Hominesboz@gmail.com">Hominesboz@gmail.com</a>
             </p>
           </div>
