@@ -22,6 +22,7 @@ module.exports = {
       '3xl': '2.18rem', //35
       '4xl': '2.5rem',//40
       '5xl': '2.81rem',//45
+      'mega': '6rem', //96px
     }
   },
   plugins: [],
