@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import Section from "../components/section"
-import ButtonLink from "../components/buttonLink"
+import { WhiteLinkButton, OliveLinkButton } from "../components/LinkButton"
 import ContactSection from "../components/contactSection"
 
 const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, BeyunaImage, HeroesImage, SelinaPhoto } }) => (
@@ -22,7 +22,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         <p>
           Manuele therapie is een specialisatie van fysiotherapie. Bij Homines behandel ik je niet alleen, maar achterhaal ik ook de oorzaak van de klachten in je gewrichten, spieren en zenuwfuncties. Daarbij houd ik rekening met gerelateerde beperkingen tijdens de dagelijkse activiteiten. Mijn doel is om jou zo te behandelen, dat je niet meer terugkomt met dezelfde klachten.
         </p>
-        <ButtonLink linkTo="/manuele-fysiotherapie">MEER INFO</ButtonLink>
+        <OliveLinkButton to="/manuele-fysiotherapie">MEER INFO</OliveLinkButton>
       </div>
       <div>
 
@@ -33,7 +33,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         <p>
           Met een liveliness traject investeer je in jezelf en sta jij op nummer 1. In korte gaan we samen aan de slag en zal je kennis opdoen, verbanden leggen en resultaten behalen, zodat jij je optimale zelf kunt zijn. Het resultaat zijn een gezonde lichaam en geest en voldoende energie om het leven aan te kunnen. Gun jij jezelf de beste versie van jezelf? Ga dan de uitdaging met mij aan.
         </p>
-        <ButtonLink linkTo="/liveliness-trajecten">MEER INFO</ButtonLink>
+        <OliveLinkButton to="/liveliness-trajecten">MEER INFO</OliveLinkButton>
       </div>
     </Section>
 
@@ -51,7 +51,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         </div>
       </div>
 
-      <ButtonLink linkTo="/contact">NEEM CONTACT OP</ButtonLink>
+      <OliveLinkButton to="/contact">NEEM CONTACT OP</OliveLinkButton>
     </Section>
 
     <Section className="py-8 mb-10">
@@ -68,11 +68,11 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         </div>
       </div>
 
-      <ButtonLink linkTo="/contact">NEEM CONTACT OP</ButtonLink>
+      <OliveLinkButton to="/contact">NEEM CONTACT OP</OliveLinkButton>
     </Section>
 
     <ContactSection>
-      <ButtonLink className="bg-white text-grey mb-8" linkTo="/contact">CONTACT</ButtonLink>
+      <WhiteLinkButton to="/contact">CONTACT</WhiteLinkButton>
     </ContactSection>
 
 

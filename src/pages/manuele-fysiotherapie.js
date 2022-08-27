@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import Section from "../components/section"
-import ButtonLink from "../components/buttonLink"
+import {WhiteLinkButton} from "../components/LinkButton"
 
 const FysiotherapiePage = ({ data: { JumbotronImage, FysiotherapiePhoto } }) => (
   <Layout>
@@ -31,7 +31,7 @@ const FysiotherapiePage = ({ data: { JumbotronImage, FysiotherapiePhoto } }) => 
     <Section colour="bg-olive" >
       <h2>Maak een afspraak</h2>
       <p>Heb jij fysieke klachten? En wil je er nu echt van af?<br />Maak een afspraak en dan gaan we samen met die puzzel aan de slag.</p>
-      <ButtonLink className="bg-white text-grey mb-8" linkTo="/contact">CONTACT</ButtonLink>
+      <WhiteLinkButton to="/contact">CONTACT</WhiteLinkButton>
     </Section>
 
   </Layout>
