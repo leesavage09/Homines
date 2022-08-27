@@ -9,6 +9,7 @@ import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import Section from "../components/section"
 import { WhiteLinkButton } from "../components/LinkButton"
+import Prices from "../components/prices"
 
 const LivelinessPage = ({ data: { JumbotronImage, SelinaLivelinessPhoto, Testimonials } }) => (
   <Layout>
@@ -76,6 +77,11 @@ const LivelinessPage = ({ data: { JumbotronImage, SelinaLivelinessPhoto, Testimo
         ))}
       </div>
     </Section>
+
+    <Prices items={["Intake: € 55*", "Liveliness Traject: € 511"]} />
+    <p className="-mt-6 mb-10">
+      * Als je na de intake besluit om het liveliness traject samen met mij te starten, wordt dit bedrag in mindering gebracht op de kosten van het traject.
+    </p>
 
     <Section colour="bg-olive" >
       <h2>Maak een afspraak</h2>

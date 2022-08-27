@@ -5,6 +5,7 @@ import Seo from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import Section from "../components/section"
 import { WhiteLinkButton } from "../components/LinkButton"
+import Prices from "../components/prices"
 
 const FysiotherapiePage = ({ data: { JumbotronImage, FysiotherapiePhoto } }) => (
   <Layout>
@@ -29,8 +30,10 @@ const FysiotherapiePage = ({ data: { JumbotronImage, FysiotherapiePhoto } }) => 
           alt={FysiotherapiePhoto.altText}
         />
       </div>
-      <p className="hidden lg:block">Daarbij is ieder persoon uniek en is het totale plaatje nodig om de puzzel op te lossen. Wanneer je jezelf en je lichaam leert begrijpen kun je actief bijdragen aan jouw herstel met behulp van je eigen bewustwording.</p>
+      <p className="hidden lg:block mb-0">Daarbij is ieder persoon uniek en is het totale plaatje nodig om de puzzel op te lossen. Wanneer je jezelf en je lichaam leert begrijpen kun je actief bijdragen aan jouw herstel met behulp van je eigen bewustwording.</p>
     </Section>
+
+    <Prices items={["Intake: € 60", "Behandeling: € 50"]} />
 
     <Section colour="bg-olive" >
       <h2>Maak een afspraak</h2>
