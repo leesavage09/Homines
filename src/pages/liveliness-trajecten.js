@@ -59,7 +59,7 @@ const LivelinessPage = ({ data: { JumbotronImage, SelinaLivelinessPhoto, Testimo
         </ul>
       </div>
       <img
-        className="order-first lg:order-last lg:relative ml-10 lg:-mb-32 lg:-top-32 z-10 w-4/6 p-4 sm:p-6 md:p-8 lg:p-10 border-solid border-4 border-olive bg-white"
+        className="order-first lg:order-last lg:relative ml-10 lg:-mb-32 lg:-top-32 z-10 w-4/6 p-4 sm:p-6 md:p-8 lg:p-10 border-solid border-4 border-olive bg-white self-center object-contain"
         src={SelinaLivelinessPhoto.photo.url + '?w=377&fm=jpg&q=80'}
         alt={SelinaLivelinessPhoto.altText}
       />

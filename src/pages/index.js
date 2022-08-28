@@ -15,7 +15,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
     <Section className="flex flex-col sm:flex-row sm:space-x-7">
       <div className="mb-10">
         <div className="border-solid border-4 border-olive mb-6 flex justify-center" >
-          <img src={fysiotherapieImage.image.url + '?h=265&fm=gif&q=1'} alt={fysiotherapieImage.altText} />
+          <img className="self-center object-contain" src={fysiotherapieImage.image.url + '?h=265&fm=gif&q=1'} alt={fysiotherapieImage.altText} />
 
         </div>
         <h2>Manuele- en Fysiotherapie</h2>
@@ -27,7 +27,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
       </div>
       <div className="mb-10">
         <div className="border-solid border-4 border-olive mb-6 flex justify-center" >
-          <img src={LivelinessImage.image.url + '?h=265&fm=gif&q=1'} alt={LivelinessImage.altText} />
+          <img className="self-center object-contain" src={LivelinessImage.image.url + '?h=265&fm=gif&q=1'} alt={LivelinessImage.altText} />
         </div>
         <h2>Liveliness Trajecten</h2>
         <p className="text-left">
@@ -53,7 +53,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         </p>
         <div className="flex flex-col justify-center self-center text-center w-4/6 sm:w-3/6 md:w-2/6 border-solid border-4 border-white p-2 sm:p-4 md:p-8 ml-8" >
           <p>Independent sales representative</p>
-          <img className="m-auto my-0" width="200px" src={BeyunaImage.image.url} alt={BeyunaImage.altText} />
+          <img className="m-auto my-0 self-center object-contain" width="200px" src={BeyunaImage.image.url} alt={BeyunaImage.altText} />
         </div>
       </div>
 
@@ -74,7 +74,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
         </p>
         <div className="flex flex-col justify-center self-center text-center w-4/6 sm:w-3/6 md:w-2/6 border-solid border-4 border-olive p-2 sm:p-4 md:p-8 ml-8" >
           <p>In Samenwerking Met</p>
-          <img className="m-auto my-0" width="200px" src={HeroesImage.image.url} alt={HeroesImage.altText} />
+          <img className="m-auto my-0 self-center object-contain" width="200px" src={HeroesImage.image.url} alt={HeroesImage.altText} />
         </div>
       </div>
 
