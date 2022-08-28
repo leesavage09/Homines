@@ -38,7 +38,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
       </div>
     </Section>
 
-    <Section colour="bg-grey" className="text-white py-8">
+    <Section colour="bg-grey" className="text-white py-8" id="voeding">
       <h2 className="text-2xl">Voeding &amp; Supplementen</h2>
       <p className="text-xl">“The body is both a temple and a perfect machine. Our bodies have within them a healing potential, and we nourish this potential with the pure and simple foods found in nature.” - Angela Lindvall</p>
 
@@ -60,7 +60,7 @@ const IndexPage = ({ data: { jumboImage, fysiotherapieImage, LivelinessImage, Be
       <OliveLinkButton to="/contact">NEEM CONTACT OP</OliveLinkButton>
     </Section>
 
-    <Section className="py-8 mb-10">
+    <Section className="py-8 mb-10" id="fysiek">
       <h2 className="text-2xl">Fysiek Fit</h2>
       <p className="text-xl">“Movement is a medicine for creating change in a human’s physical, emotional and mental state.”</p>
 

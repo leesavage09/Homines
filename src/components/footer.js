@@ -1,5 +1,6 @@
 import * as React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Section from "./section"
 
 const Footer = () => {
@@ -22,8 +23,8 @@ const Footer = () => {
           <ul className="">
             <li className="mb-2" ><Link to="/manuele-fysiotherapie">Manuele- &amp; Fysiotherapie</Link></li>
             <li className="mb-2" ><Link to="/liveliness-trajecten">Liveliness Trajecten</Link></li>
-            <li className="mb-2" >Voeding &amp; Supplementen</li>
-            <li className="mb-2" >Fysiek Fit</li>
+            <li className="mb-2" ><AnchorLink to="/#voeding">Voeding &amp; Supplementen</AnchorLink></li>
+            <li className="mb-2" ><AnchorLink to="/#fysiek">Fysiek Fit</AnchorLink></li>
           </ul>
         </div>
         <div className="w-5/6 md:w-1/6">

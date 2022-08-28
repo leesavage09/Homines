@@ -12,6 +12,7 @@
     "contentful-import": "^8.3.2",
     "dotenv": "^16.0.1",
     "gatsby": "^4.8.0",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-gatsby-cloud": "^4.8.0",
     "gatsby-plugin-image": "^2.8.0",
     "gatsby-plugin-manifest": "^4.8.0",
