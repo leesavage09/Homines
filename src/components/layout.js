@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header />
-            <main className="mt-10 text-center">{children}</main>
+            <main className="text-center">{children}</main>
             <Footer />
         </>
     )

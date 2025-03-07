@@ -6,17 +6,17 @@ const Jumbotron = ({ title, imageSrc, imageAlt, quote }) => {
         <>
             <Section
                 padding=""
-                className="hidden lg:flex flex-row justify-center items-end"
+                className="my-10 hidden lg:flex flex-row justify-center items-end"
             >
                 <div className="flex flex-col ml-8">
-                    <h1>{title}</h1>
                     <img
                         className="z-10 self-center object-contain"
                         src={imageSrc}
                         alt={imageAlt}
                     />
                 </div>
-                <p className="flex basis-8/12 self-center justify-center ml-8 mr-8 text-3xl ">
+                <p className="flex flex-col basis-8/12 self-center justify-center ml-8 mr-8 text-3xl ">
+                    <h1>{title}</h1>
                     {quote}
                 </p>
             </Section>
@@ -37,7 +37,6 @@ const Jumbotron = ({ title, imageSrc, imageAlt, quote }) => {
                     />
                 </div>
             </Section>
-            <div className="w-screen border-solid border-t-4 border-olive" />
         </>
     )
 }
