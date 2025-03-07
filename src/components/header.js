@@ -16,9 +16,8 @@ const Header = () => {
                         <MenuItem to="/">HOMINES</MenuItem>
                     </h1>
                     <MenuItem to="/manuele-fysiotherapie">
-                        MANUELE- &amp;
-                        <br />
-                        FYSIOTHERAPIE
+                        MANUELE <br />
+                        THERAPIE
                     </MenuItem>
                     <MenuItem to="/liveliness-trajecten">
                         LIVELINESS
@@ -64,7 +63,7 @@ const MenuItem = ({ to, children, className }) => {
 const MobileMenu = () => (
     <menu className="block xl:hidden flex flex-col space-y-10 text-xl p-10 border-solid border-4 border-olive ">
         <Link className="no-underline" to="/manuele-fysiotherapie">
-            MANUELE- &amp; FYSIOTHERAPIE
+            MANUELE THERAPIE
         </Link>
         <Link className="no-underline" to="/liveliness-trajecten">
             LIVELINESS TRAJECTEN

@@ -23,7 +23,7 @@ const Footer = () => {
                     <ul className="">
                         <li className="mb-2">
                             <Link to="/manuele-fysiotherapie">
-                                Manuele- &amp; Fysiotherapie
+                                Manuele Therapie
                             </Link>
                         </li>
                         <li className="mb-2">
@@ -84,14 +84,6 @@ const Footer = () => {
                 className="flex justify-center items-center text-white h-12"
             >
                 {`© ${new Date().getFullYear()} - Alle rechten voorbehouden `}
-            </Section>
-            <Section
-                padding="pt-6 pb-20 px-4"
-                className="flex justify-center text-center"
-            >
-                {`Description: Homines Bergen op Zoom - Neem contact op om een afspraak te maken voor`}
-                <br />
-                {`manuele- & fysiotherapie of om een liveliness traject te starten.`}
             </Section>
         </footer>
     )
