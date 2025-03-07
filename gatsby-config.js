@@ -7,12 +7,13 @@ module.exports = {
         title: `Homines`,
         description: `Homines webapp`,
         author: `Lee Savage`,
-        siteUrl: `https://TODO`,
+        siteUrl: `https://portfolio.leesavage.co.uk/`,
     },
     plugins: [
         'gatsby-plugin-postcss',
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-image`,
+        `gatsby-plugin-remove-serviceworker`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {

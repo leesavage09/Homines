@@ -25,44 +25,49 @@ const OverPage = ({
         />
 
         <Section
-            className="flex flex-col xl:space-x-11"
+            className="flex flex-col lg:flex-row xl:space-x-11"
             padding="pt-10 pb-0 px-6 sm:px-10 md:px-32"
         >
-            <p className="text-left">
-                Waarom? Is dat zo? Twee simpele vragen, maar voor mij zijn ze de
-                rode draad door mijn leven. Al sinds de middelbare school is
-                mijn nieuwsgierigheid mijn drijvende kracht. Ik herinner me nog
-                een docent die zei: “Selina, neem dit nu maar gewoon aan. Je
-                kunt niet alles uitleggen, sommige dingen moet je gewoon
-                aannemen.” Dat antwoord liet me destijds niet los, en eerlijk
-                gezegd doet het dat nog steeds niet.
-                <br />
-                <br />
-                Eigenwijs en kritisch zijn misschien niet altijd de makkelijkste
-                eigenschappen, maar ze hebben me wel gebracht waar ik nu ben. Ik
-                ben altijd op zoek naar nieuwe inzichten, met een honger naar
-                het complete plaatje. Wat ligt er achter de klacht? Hoe werkt
-                het lichaam écht? Die vragen blijven me inspireren en uitdagen.
-                <br />
-                <br />
+            <div>
+                <p className="text-left">
+                    Waarom? Is dat zo? Twee simpele vragen, maar voor mij zijn
+                    ze de rode draad door mijn leven. Al sinds de middelbare
+                    school is mijn nieuwsgierigheid mijn drijvende kracht. Ik
+                    herinner me nog een docent die zei: “Selina, neem dit nu
+                    maar gewoon aan. Je kunt niet alles uitleggen, sommige
+                    dingen moet je gewoon aannemen.” Dat antwoord liet me
+                    destijds niet los, en eerlijk gezegd doet het dat nog steeds
+                    niet.{' '}
+                </p>
+                <p className="text-left">
+                    Eigenwijs en kritisch zijn misschien niet altijd de
+                    makkelijkste eigenschappen, maar ze hebben me wel gebracht
+                    waar ik nu ben. Ik ben altijd op zoek naar nieuwe inzichten,
+                    met een honger naar het complete plaatje. Wat ligt er achter
+                    de klacht? Hoe werkt het lichaam écht? Die vragen blijven me
+                    inspireren en uitdagen.
+                </p>
                 <h2>Een zoektocht naar dieper begrip</h2>
-                Tijdens mijn eerste jaren als fysiotherapeut voelde ik al dat er
-                iets ontbrak. Het leek alsof ik niet alle puzzelstukjes in
-                handen had om mensen écht te kunnen helpen. Dat gevoel bracht me
-                op een pad van ontdekken & leren. Ik dook dieper in domeinen
-                zoals voeding, suppletie, mindset, ademhaling, bindweefsel en
-                energetische verbindingen. Dit proces, gecombineerd met mijn
-                eigen ervaringen - in mijn persoonlijke reis met o.a. darm- &
-                huidklachten en voeding - heeft niet alleen mijzelf veranderd,
-                maar ook mijn werk als therapeut.
-                <br />
-                <br />
-                Wat ik ontdekte, is dat alles met elkaar in verbinding staat.
-                Het lichaam vertelt een verhaal, en het begrijpen van dat
-                verhaal vraagt om een bredere blik. Het heeft me geleerd om
-                buiten de protocollen te denken en met intuïtie en
-                nieuwsgierigheid te werken aan échte oplossingen.
-            </p>
+                <p className="text-left">
+                    Tijdens mijn eerste jaren als fysiotherapeut voelde ik al
+                    dat er iets ontbrak. Het leek alsof ik niet alle
+                    puzzelstukjes in handen had om mensen écht te kunnen helpen.
+                    Dat gevoel bracht me op een pad van ontdekken & leren. Ik
+                    dook dieper in domeinen zoals voeding, suppletie, mindset,
+                    ademhaling, bindweefsel en energetische verbindingen. Dit
+                    proces, gecombineerd met mijn eigen ervaringen - in mijn
+                    persoonlijke reis met o.a. darm- & huidklachten en voeding -
+                    heeft niet alleen mijzelf veranderd, maar ook mijn werk als
+                    therapeut.
+                </p>
+                <p className="text-left">
+                    Wat ik ontdekte, is dat alles met elkaar in verbinding
+                    staat. Het lichaam vertelt een verhaal, en het begrijpen van
+                    dat verhaal vraagt om een bredere blik. Het heeft me geleerd
+                    om buiten de protocollen te denken en met intuïtie en
+                    nieuwsgierigheid te werken aan échte oplossingen.
+                </p>
+            </div>
 
             <img
                 className="z-10 w-6/6 mx-auto p-4 sm:p-6 md:p-8 border-solid border-4 border-olive bg-white self-center object-contain"
