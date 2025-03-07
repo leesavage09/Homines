@@ -23,7 +23,7 @@ const Jumbotron = ({ title, imageSrc, imageAlt, quote }) => {
 
             <Section
                 padding=""
-                className="lg:hidden flex-row justify-center items-end"
+                className="my-10 lg:hidden flex-row justify-center items-end"
             >
                 <div className="flex flex-col ml-8">
                     <h1>{title}</h1>

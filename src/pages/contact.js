@@ -31,7 +31,7 @@ const ContactPage = props => {
 
             <Section className="flex flex-col lg:flex-row mb-20 lg:mb-0 justify-center items-center">
                 <div className="w-6/6 md:w-5/6 lg:w-3/6 flex items-center">
-                    <p className="px-20">
+                    <p>
                         Wil je aan de slag met manuele therapie maar dan anders,
                         of ben je nieuwsgierig naar het Liveliness Traject? Neem
                         gerust contact met mij op om een belafspraak te maken.

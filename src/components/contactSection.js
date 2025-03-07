@@ -17,7 +17,7 @@ const ContactSection = ({ children }) => {
     return (
         <Section colour="bg-olive">
             <div className="flex flex-col lg:flex-row justify-center items-center">
-                <div className="w-3/6 flex justify-center ">
+                <div className="w-full sm:5/6  md:w-4/6 lg:3/6 flex justify-center ">
                     <img
                         className="z-10 w-4/6 p-4 sm:p-6 md:p-8 lg:p-10 border-solid border-4 border-olive bg-white self-center object-contain"
                         src={data.SelinaPhoto.photo.url + '?w=377&fm=jpg&q=80'}

@@ -127,7 +127,7 @@ const IndexPage = ({
             <div className="w-4/5 border-solid border-t-4 border-white m-auto pb-8" />
 
             <div className="flex flex-col md:flex-row pb-16 items-center">
-                <div className="w-4/6 text-left">
+                <div className="w-6/6 text-left">
                     De juiste voeding geeft je lichaam de bouwstoffen die het
                     nodig heeft om gezond te blijven, ziektes te voorkomen en
                     optimaal te functioneren. Helaas is de kwaliteit van ons
@@ -182,7 +182,7 @@ const IndexPage = ({
             <div className="w-4/5 border-solid border-t-4 border-grey m-auto pb-8" />
 
             <div className="flex flex-col md:flex-row pb-16 items-center">
-                <p className="w-4/6 text-left">
+                <p className="w-6/6 text-left">
                     Beweging is zoveel meer dan fysieke inspanning. Het is een
                     manier om spanning los te laten, energie op te laden, jezelf
                     te leren kennen en je grenzen te verleggen. Het helpt je
