@@ -3,6 +3,11 @@ import { Link } from 'gatsby'
 import { useLocation } from '@reach/router'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// load fortawesome styles to fix SSG
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
+// Prevent fontawesome from dynamically adding its css since we did it manually above
+config.autoAddCss = false
 
 const Header = () => {
     const [showMobileMenu, setShowMobileMenu] = React.useState(false)

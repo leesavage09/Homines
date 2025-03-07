@@ -9,7 +9,7 @@ export const List = ({ children }) => {
 export const ListItem = ({ children }) => {
     return (
         <li>
-            <FontAwesomeIcon className="pr-4" icon={faStarOfLife} />
+            <FontAwesomeIcon className="pr-4" size="1x" icon={faStarOfLife} />
             {children}
         </li>
     )

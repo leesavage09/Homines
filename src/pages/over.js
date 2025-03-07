@@ -25,7 +25,7 @@ const OverPage = ({
         />
 
         <Section
-            className="flex flex-col xl:flex-row xl:space-x-11"
+            className="flex flex-col xl:space-x-11"
             padding="pt-10 pb-0 px-6 sm:px-10 md:px-32"
         >
             <p className="text-left">
