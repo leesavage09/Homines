@@ -43,7 +43,7 @@ const ContactPage = props => {
                 </div>
                 <div className="w-6/6 md:w-5/6 lg:w-3/6 flex justify-center items-start">
                     <div className="border-solid border-4 border-olive p-4">
-                        <h2>HominesBoZ</h2>
+                        <h2 className="mt-0">HominesBoZ</h2>
                         <ul className="flex flex-col justify-start items-start">
                             <li className="my-2  flex flex-row">
                                 <a href="tel:+31653505456">
