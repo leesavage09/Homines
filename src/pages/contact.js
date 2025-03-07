@@ -32,13 +32,13 @@ const ContactPage = props => {
             <Section className="flex flex-col lg:flex-row mb-20 lg:mb-0 justify-center items-center">
                 <div className="w-6/6 md:w-5/6 lg:w-3/6 flex items-center">
                     <p className="px-20">
-                        Neem contact met mij op om een afspraak te maken voor
-                        manuele- &amp; fysiotherapie of om een liveliness
-                        traject te starten.
-                        <br />
-                        <br />
-                        Daarnaast kun je ook bij mij terecht voor meer
-                        informatie over voeding &amp; suppletie en fysiek fit.
+                        Wil je aan de slag met manuele therapie maar dan anders,
+                        of ben je nieuwsgierig naar het Liveliness Traject? Neem
+                        gerust contact met mij op om een belafspraak te maken.
+                        <br /> <br />
+                        Ook voor vragen over voeding, suppletie of sporten bij
+                        Home of Heroes sta ik voor je klaar. Samen kijken we
+                        naar wat bij jou past en wat jouw behoefte zijn.
                     </p>
                 </div>
                 <div className="w-6/6 md:w-5/6 lg:w-3/6 flex justify-center items-start">
