@@ -13,7 +13,7 @@ const OverPage = ({
     <Layout>
         <Seo title="Over Selina" />
         <Jumbotron
-            title="OVER MIJ"
+            title="Over mij"
             imageSrc={JumboImage.image.url + '?w=400&fm=gif&q=1'}
             imageAlt={JumboImage.altText}
             quote={
@@ -24,53 +24,81 @@ const OverPage = ({
             }
         />
 
-        <Section className="flex flex-col xl:flex-row xl:space-x-11">
+        <Section
+            className="flex flex-col xl:flex-row xl:space-x-11"
+            padding="pt-10 pb-0 px-6 sm:px-10 md:px-32"
+        >
             <p className="text-left">
-                Waarom? Is dat zo? Dit zijn twee vragen die als een rode draad
-                door mijn leven lopen. Ik kan mij nog van de middelbare school
-                herinneren dat een docent tegen zei: “Selina neem dit nu maar
-                gewoon aan, het is zo en hierop gaan we verder. Je kunt niet
-                alles uitleggen, sommige dingen moet je gewoon aannemen.”
+                Waarom? Is dat zo? Twee simpele vragen, maar voor mij zijn ze de
+                rode draad door mijn leven. Al sinds de middelbare school is
+                mijn nieuwsgierigheid mijn drijvende kracht. Ik herinner me nog
+                een docent die zei: “Selina, neem dit nu maar gewoon aan. Je
+                kunt niet alles uitleggen, sommige dingen moet je gewoon
+                aannemen.” Dat antwoord liet me destijds niet los, en eerlijk
+                gezegd doet het dat nog steeds niet.
                 <br />
                 <br />
-                Eigen-wijs en kritisch zijn eigenschappen die maken dat ik
-                altijd op zoek ben naar nieuwe informatie om mijn kijk op dingen
-                te verbreden en te zoeken naar het complete plaatje.
+                Eigenwijs en kritisch zijn misschien niet altijd de makkelijkste
+                eigenschappen, maar ze hebben me wel gebracht waar ik nu ben. Ik
+                ben altijd op zoek naar nieuwe inzichten, met een honger naar
+                het complete plaatje. Wat ligt er achter de klacht? Hoe werkt
+                het lichaam écht? Die vragen blijven me inspireren en uitdagen.
                 <br />
                 <br />
-                Tijdens mijn eerste werkjaren als fysiotherapeut kwam ik er
-                achter dat ik het een en ander miste om mensen echt te kunnen
-                helpen. Ik wist dat het plaatje niet compleet was, al kon ik
-                niet precies vertellen wat eraan ontbrak. Jarenlang ben ik op
-                zoek gegaan naar de missende informatie en inmiddels heb ik de
-                verdieping gevonden in voeding &amp; suppletie, mindset,
-                ademhaling en andere domeinen. Hoewel ik inmiddels heel veel
-                missende informatie heb gevonden, weet ik dat er nog een hoop te
-                ontdekken is en blijf ik mij verder in de materie verdiepen. De
-                fascinatie voor mens, ziel en lichaam zorgt bij mij nu eenmaal
-                voor een hongerigheid naar informatie.
+                <h2>Een zoektocht naar dieper begrip</h2>
+                Tijdens mijn eerste jaren als fysiotherapeut voelde ik al dat er
+                iets ontbrak. Het leek alsof ik niet alle puzzelstukjes in
+                handen had om mensen écht te kunnen helpen. Dat gevoel bracht me
+                op een pad van ontdekken & leren. Ik dook dieper in domeinen
+                zoals voeding, suppletie, mindset, ademhaling, bindweefsel en
+                energetische verbindingen. Dit proces, gecombineerd met mijn
+                eigen ervaringen - in mijn persoonlijke reis met o.a. darm- &
+                huidklachten en voeding - heeft niet alleen mijzelf veranderd,
+                maar ook mijn werk als therapeut.
                 <br />
                 <br />
-                De momenten dat ik niet gepassioneerd bezig ben met
-                ‘werkzaamheden’ zoek ik graag de rust op in het bos of op het
-                strand en verzamel ik informatie uit boeken, podcasts,
-                artikelen, cursussen etc. Daarnaast heeft tijd spenderen met
-                mijn man en vrienden ook een hoge prioriteit. En zoals mijn man
-                zegt, is slapen een hobby van mij, maar wel onder het motto van
-                selfcare ;).
+                Wat ik ontdekte, is dat alles met elkaar in verbinding staat.
+                Het lichaam vertelt een verhaal, en het begrijpen van dat
+                verhaal vraagt om een bredere blik. Het heeft me geleerd om
+                buiten de protocollen te denken en met intuïtie en
+                nieuwsgierigheid te werken aan échte oplossingen.
             </p>
 
             <img
-                className="z-10 w-4/6 mx-auto p-4 sm:p-6 md:p-8 border-solid border-4 border-olive bg-white self-center object-contain"
+                className="z-10 w-6/6 mx-auto p-4 sm:p-6 md:p-8 border-solid border-4 border-olive bg-white self-center object-contain"
                 src={SelinaPhoto.photo.url + '?w=308&fm=jpg&q=80'}
                 alt={SelinaPhoto.altText}
             />
         </Section>
 
+        <Section className="pt-0" padding="pt-0 pb-10 px-6 sm:px-10 md:px-32">
+            <p className="text-left">
+                <h2>Passie voor mens, ziel en lichaam</h2>
+                Mijn fascinatie voor de verbinding tussen mens, ziel en lichaam
+                is onuitputtelijk. Ik blijf mezelf verdiepen, of dat nu is via
+                cursussen, boeken, podcasts of simpelweg door mijn eigen lichaam
+                te observeren en nog beter te leren kennen. Die passie vertaalt
+                zich in mijn werk, waar ik verbanden leg en mensen begeleid naar
+                meer balans & herstel.
+                <br />
+                <br />
+                <h2>Rust en zelfzorg</h2>
+                Wanneer ik niet bezig ben met mijn werk, zoek ik graag de natuur
+                op. Het bos en het strand zijn mijn plekken van rust en
+                reflectie. Ook tijd doorbrengen met mijn man lekker cosy thuis
+                is voor mij waardevol. En zoals mijn man vaak zegt: slapen is
+                mijn hobby. Maar dat zie ik meer als een ultieme vorm van
+                selfcare ;) Elke dag is voor mij een kans om te leren en te
+                groeien—zowel voor mezelf als voor iedereen. Mijn missie is om
+                anderen te helpen de kracht en wijsheid van hun eigen lichaam te
+                herontdekken, en dat geeft mij de meeste voldoening.
+            </p>
+        </Section>
+
         <Section colour="bg-olive" className="text-white">
             <h2 className=" text-2xl">Opleidingen &amp; Cursussen</h2>
             <ul className="text-left inline-block">
-                {SelinaQualifications.list.map(item => (
+                {SelinaQualifications.list.reverse().map(item => (
                     <li key={item} className="pb-2">
                         <FontAwesomeIcon
                             className="text-xl pr-4"
