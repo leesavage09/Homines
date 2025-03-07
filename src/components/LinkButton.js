@@ -1,5 +1,5 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react'
+import { Link } from 'gatsby'
 
 const LinkButton = ({ to, children, className }) => {
     return (
@@ -14,10 +14,7 @@ const LinkButton = ({ to, children, className }) => {
 
 export const OliveLinkButton = ({ to, children }) => {
     return (
-        <LinkButton
-            className={`bg-olive text-white`}
-            to={to}
-        >
+        <LinkButton className={`bg-olive text-white`} to={to}>
             {children}
         </LinkButton>
     )
@@ -25,10 +22,7 @@ export const OliveLinkButton = ({ to, children }) => {
 
 export const WhiteLinkButton = ({ to, children }) => {
     return (
-        <LinkButton
-            className={`bg-white text-grey`}
-            to={to}
-        >
+        <LinkButton className={`bg-white text-grey`} to={to}>
             {children}
         </LinkButton>
     )

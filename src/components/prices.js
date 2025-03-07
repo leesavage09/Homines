@@ -1,5 +1,5 @@
-import * as React from "react"
-import Section from "./section"
+import * as React from 'react'
+import Section from './section'
 
 const Prices = ({ items = [] }) => {
     return (
@@ -8,7 +8,7 @@ const Prices = ({ items = [] }) => {
             <Section>
                 <h2 className="mt-0">Prijzen</h2>
                 <ul>
-                    {items.map((item)=>(
+                    {items.map(item => (
                         <li key={item}>{item}</li>
                     ))}
                 </ul>
